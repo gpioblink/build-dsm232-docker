@@ -1,0 +1,22 @@
+Index: autoconf-2.65/doc/autoconf.texi
+===================================================================
+--- autoconf-2.65.orig/doc/autoconf.texi 2009-11-05 10:42:15.000000000 +0800
++++ autoconf-2.65/doc/autoconf.texi 2013-05-28 05:41:09.243770263 +0800
+@@ -15,7 +15,7 @@
+ @c The ARG is an optional argument. To be used for macro arguments in
+ @c their documentation (@defmac).
+ @macro ovar{varname}
+-@r{[}@var{\varname\}@r{]}@c
++@r{[}@var{\varname\}@r{]}
+ @end macro
+ 
+ @c @dvar(ARG, DEFAULT)
+@@ -23,7 +23,7 @@
+ @c The ARG is an optional argument, defaulting to DEFAULT. To be used
+ @c for macro arguments in their documentation (@defmac).
+ @macro dvar{varname, default}
+-@r{[}@var{\varname\} = @samp{\default\}@r{]}@c
++@r{[}@var{\varname\} = @samp{\default\}@r{]}
+ @end macro
+ 
+ @c Handling the indexes with Texinfo yields several different problems.

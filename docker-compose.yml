@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  dsm232:
+    build:
+      context: ./dsm232
+    volumes:
+      - ./build:/env/ott/images
