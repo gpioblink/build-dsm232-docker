@@ -33,15 +33,4 @@ ENV OPENSOURCE_PATH $ROOTDIR/mediademo/work/build
 ENV OPENSOURCE_LIB $ROOTDIR/mediademo/work/target/usr/lib
 ENV PATH /opt/arm-2010q1/bin:$CRISP_RELEASE/tools/bin/:$ROOTDIR/tools:$PATH
 
-# ENV CC arm-none-linux-gnueabi-gcc
-# ENV AR arm-none-linux-gnueabi-ar
-# ENV RANLIB arm-none-linux-gnueabi-ranlib
-# ENV AS arm-none-linux-gnueabi-as
-# ENV LD arm-none-linux-gnueabi-ld
-# ENV NM arm-none-linux-gnueabi-nm
-# ENV LIBS "-lssl -lcrypto"
-# ENV CPPFLAGS "-I/env/bin/openssl/include -I/env/bin/zlib/include"
-# ENV LDFLAGS "-L/env/bin/openssl/lib -L/env/bin/zlib/lib"
-# RUN ls -la /env/ott/
-
 CMD ["./buildgpl.sh", "all"]
