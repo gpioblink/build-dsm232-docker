@@ -1,4 +1,4 @@
 #!/bin/sh
 
 echo "running gshock exploit was successful!" > hackinfo
-cat hackinfo > /cavium/remotectl_pipe
+echo gc_warning $(cat hackinfo) > /cavium/remotectl_pipe
