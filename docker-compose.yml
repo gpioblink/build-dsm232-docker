@@ -1,8 +1,15 @@
 version: "3.8"
 
 services:
-  dsm232:
+  build-gpl-image:
     build:
       context: ./dsm232
     volumes:
       - ./build:/env/ott/images
+  gshock-image:
+    build:
+      context: ./dsm232
+    command: ./gshock/gshock.sh
+    volumes:
+      - ./gshock:/env/ott/gshock:ro
+      - ./app:/env/ott/app
