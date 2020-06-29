@@ -33,4 +33,4 @@ ENV OPENSOURCE_PATH $ROOTDIR/mediademo/work/build
 ENV OPENSOURCE_LIB $ROOTDIR/mediademo/work/target/usr/lib
 ENV PATH /opt/arm-2010q1/bin:$CRISP_RELEASE/tools/bin/:$ROOTDIR/tools:$PATH
 
-CMD ["./buildgpl.sh", "all"]
+CMD ["./buildgpl.sh", "all", "RD"]
