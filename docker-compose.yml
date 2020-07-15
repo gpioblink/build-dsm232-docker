@@ -6,10 +6,16 @@ services:
       context: ./dsm232
     volumes:
       - ./build:/env/ott/images
-  gshock-image:
+  build-dsm260-image:
+    build:
+      context: ./dsm260
+    volumes:
+      - ./build_dsm260:/env/dsm260_GPL/dongle/img
+  make-cameohax-image:
     build:
       context: ./dsm232
     command: ./gshock/gshock.sh
     volumes:
+      - ./build:/env/ott/images:ro
       - ./gshock:/env/ott/gshock:ro
       - ./app:/env/ott/app
