@@ -5,7 +5,7 @@ GPLソースのビルドはもちろん、任意のシェルスクリプトを�
 
 # DSM232ソースのビルド
 
-このリポジトリを落としてきて、`docker-compose up --build build-dsm260-image`を実行するとbuildディレクトリが作成され、そこにビルドしたイメージが保存されます。`dsm232.bin`、`dsm232.img`、`dsm232_fact.img`を作成できます。
+このリポジトリを落としてきて、`docker-compose up --build build-gpl-image`を実行するとbuildディレクトリが作成され、そこにビルドしたイメージが保存されます。`dsm232.bin`、`dsm232.img`、`dsm232_fact.img`を作成できます。
 
 **このソースは、RSA署名が違うため、G-cluster上に焼いたところでそのまま実行はできません(bootmを使用して独自でブートする必要がある)。UARTの接続ができていない方は、このイメージを焼かないでください。**
 
